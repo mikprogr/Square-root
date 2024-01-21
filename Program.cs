@@ -52,18 +52,4 @@ public class PierwiastkiKwadratowe
             Console.WriteLine("Parametr a musi być dodatni");
         }
     }
-
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Podaj parametr a: ");
-        int a = int.Parse(Console.ReadLine());
-
-        Console.WriteLine("Podaj parametr b: ");
-        int b = int.Parse(Console.ReadLine());
-
-        Console.WriteLine("Podaj parametr c: ");
-        int c = int.Parse(Console.ReadLine());
-
-        PierwiastkiKwadratowe pierwiastki = new PierwiastkiKwadratowe(a, b, c);
-    }
 }
