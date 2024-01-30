@@ -1,55 +1,30 @@
 ﻿using System;
 
-public class PierwiastkiKwadratowe
+public class Pierwiastki
 {
-    public int a;
-    public int b;
-    public int c;
-    public int delta;
-    public double pierwKw;
-    public double x1, x2, x3, x4;
-    public float x0;
-    public PierwiastkiKwadratowe(int a, int b, int c)
+    public Pierwiastki(int a, int b, int c)
     {
-        Console.WriteLine("Algorytm oblicza pierwiastki kwadratowe z równania kwadratowego ax^2 + bx + c = 0");
-        Console.WriteLine();
+        double delta = b * b - 4 * a * c;
 
-        if (a != 0)
+        if(delta > 0)
         {
-            delta = b * b - 4 * a * c;
+            double x1 = (-b - Math.Sqrt(delta)) / (2 * a);
+            double x2 = (-b + Math.Sqrt(delta)) / (2 * a);
+        }
 
-            if (delta > 0)
-            {
-                pierwKw = Math.Sqrt(delta);
+        if(delta == 0)
+        {
+            double x0 = -b / (2 * a);
+        }
 
-                x1 = (-b - pierwKw) / (2 * a);
-                x2 = (-b + pierwKw) / (2 * a);
-
-                x3 = c / (a * x1);
-                x4 = c / (a * x2);
-
-                Console.WriteLine("Dostępne są 2 pierwiastki kwadratowe");
-                Console.WriteLine($"Pierwiastek nr. 1: {x1} oraz wynik ze wzoru Viete'a wynoszący {x3}");
-                Console.WriteLine($"Pierwiastek nr. 2: {x2} oraz wynik ze wzoru Viete'a wynoszący {x4}");
-            }
-
-            else if (delta == 0)
-            {
-                x0 = -b / (2 * a);
-
-                Console.WriteLine("Dostępny jest tylko jeden pierwiastek kwadratowy");
-                Console.WriteLine($"Pierwiatek nr. 0: {x0}");
-            }
-
-            else
-            {
-                Console.WriteLine("Delta jest zmniejsza od zera. Brak pierwiastków kwadratowych.");
-            }
+        if (delta < 0)
+        {
+            Console.WriteLine("Brak pierwiastków kwadratowych");
         }
 
         else
         {
-            Console.WriteLine("Parametr a musi być dodatni");
+            Console.WriteLine("Wprowadź poprawne dane");
         }
     }
 }

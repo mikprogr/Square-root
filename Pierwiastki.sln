@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pierwiastki", "Pierwiastki.csproj", "{84C286C2-B797-4A14-A4EA-A2E9D1ADE657}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testy-xUnit", "..\Testy-xUnit\Testy-xUnit.csproj", "{8DDE9CAD-DABC-4AEA-A64C-B002496CCCCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84C286C2-B797-4A14-A4EA-A2E9D1ADE657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84C286C2-B797-4A14-A4EA-A2E9D1ADE657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84C286C2-B797-4A14-A4EA-A2E9D1ADE657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84C286C2-B797-4A14-A4EA-A2E9D1ADE657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DDE9CAD-DABC-4AEA-A64C-B002496CCCCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DDE9CAD-DABC-4AEA-A64C-B002496CCCCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DDE9CAD-DABC-4AEA-A64C-B002496CCCCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DDE9CAD-DABC-4AEA-A64C-B002496CCCCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D04D33E8-800B-488A-BA69-0E117DB974D2}
+	EndGlobalSection
+EndGlobal
